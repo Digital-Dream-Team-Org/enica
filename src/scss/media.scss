@@ -1,0 +1,1823 @@
+@import "master";
+
+@media (min-width: 768px) {
+  .-mrp-md-80 {
+    margin-right: -80px;
+  }
+
+  .-mtp-md-200 {
+    margin-top: -200px !important;
+  }
+  .-mtp-md-100 {
+    margin-top: -100px;
+  }
+  .-mtp-md-50 {
+    margin-top: -50px;
+  }
+
+  .mbp-md-150 {
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-header {
+    .navbar-brand {
+      margin-left: 0;
+      margin-bottom: 0;
+      margin-top: 0;
+      padding: 0;
+      width: 100px;
+    }
+  }
+  .main-footer {
+    &__bot {
+      &-1 {
+        .navbar-nav {
+          & > :last-child {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .section {
+    &--cases {
+      margin-top: -80px;
+    }
+    &--docs {
+      &__hand-wrap {
+        right: -100px;
+      }
+    }
+    &--robinson {
+      padding-top: 100px;
+      height: 1065px;
+    }
+    &--certificates {
+      margin-top: -330px;
+    }
+  }
+
+  .docs {
+    &-container {
+      height: 440px;
+    }
+    &__item {
+      &-1 {
+        top: 0;
+        left: -90px;
+        width: 260px;
+      }
+      &-2 {
+        top: 50px;
+        left: 85px;
+        width: 245px;
+      }
+      &-3 {
+        z-index: 3;
+        top: 20px;
+        left: 235px;
+        width: 220px;
+      }
+
+      &.active {
+        &.docs__item-1 {
+          width: 240px;
+          left: 50%;
+          top: 30px;
+          transform: translateX(-50%);
+        }
+
+        &.docs__item-2 {
+          z-index: 10;
+          width: 240px;
+          left: 50%;
+          top: 30px;
+          transform: translateX(-50%);
+        }
+
+        &.docs__item-3 {
+          z-index: 10;
+          width: 240px;
+          left: 50%;
+          top: 30px;
+          transform: translateX(-80%);
+        }
+      }
+    }
+  }
+
+  .post-card {
+    &__image {
+      &-wrap {
+        margin-bottom: 20px;
+        height: 220px;
+        width: 100%;
+      }
+    }
+
+    &--big {
+      min-height: 440px;
+
+      .post-card__title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 160%;
+        color: #fff;
+        padding: 0 20px;
+        position: relative;
+        z-index: 1;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .contact-map {
+    &-container {
+      margin-top: -90px;
+    }
+  }
+
+  .team-ceo {
+    width: 300px;
+  }
+  .team-crew {
+    max-width: 750px;
+  }
+  .contact-form {
+    &-wrap {
+      max-width: 750px;
+      &--small {
+        margin-right: auto;
+        margin-left: unset;
+
+        .team-ceo {
+          right: -215px;
+        }
+        .team-ceo__card {
+          right: -215px;
+        }
+      }
+    }
+  }
+
+  .vacancy-ceo {
+    width: 300px;
+  }
+
+  .contact-info {
+    &-container {
+      width: 100%;
+      flex: 0 0 100%;
+      margin-top: 20px;
+    }
+
+    &__phone,
+    &__email {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+    &__address {
+      width: 50%;
+    }
+  }
+
+  .ceo-message {
+    &__image {
+      &-wrap {
+        top: -450px;
+        width: 235px;
+      }
+    }
+
+    &__card {
+      max-width: 200px;
+    }
+  }
+
+  .accomplishments {
+    &__value {
+      font-size: 70px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  h1,
+  h2 {
+    font-weight: bold;
+    font-size: 1.75rem;
+    line-height: 120%;
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 120%;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 160%;
+  }
+
+  .main-header {
+    .navbar-brand {
+      width: 200px;
+      margin-left: 0;
+    }
+    .navbar-collapse {
+      margin-top: 10px;
+      background: #fff;
+      color: #000;
+      border-radius: 6px;
+      padding: 15px;
+
+      .navbar-nav {
+        .nav-item {
+          margin-right: 0;
+          margin-bottom: 30px;
+          text-align: center;
+
+          &.dd-button {
+            background: $primaryColor !important;
+            box-shadow: none !important;
+            a {
+              color: #fff !important;
+            }
+          }
+
+          .nav-link {
+            color: #000;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .main-footer {
+    &__bot {
+      &-1 {
+        .navbar-nav {
+          & > :last-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    &__text--small {
+      margin-bottom: 1px;
+    }
+    .navbar-nav {
+      .nav-item {
+        &:not(:last-child) {
+          .nav-link {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .tech-navbar {
+      .nav-item {
+        &:not(:last-child) {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .section {
+    &--home-hero {
+      height: 950px;
+    }
+    &--docs {
+      height: 2775px;
+      background-size: cover;
+      &__hand-wrap {
+        right: -250px;
+      }
+    }
+    &--cases {
+      margin-top: -230px;
+    }
+    &--robinson {
+      padding-top: 140px;
+      height: 880px;
+      background-size: cover;
+    }
+    &--certificates {
+      margin-top: -50px;
+      margin-bottom: 50px;
+    }
+
+    &--page-hero {
+      background-size: cover;
+      background-position: top left;
+      // margin-bottom: 50px;
+    }
+    &--sb-page-hero {
+      // height: 950px;
+      background-size: cover;
+      background-position: top left;
+
+      &-content {
+        margin-top: -40px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      &__content {
+        font-size: 1rem;
+      }
+
+      &__route {
+        display: flex;
+        margin-bottom: 15px;
+        justify-content: space-between;
+        align-items: center;
+
+        &-start,
+        &-finish {
+          font-size: 16px;
+          line-height: 160%;
+        }
+        &-arrow {
+          margin-left: 10px;
+          margin-right: 10px;
+          color: #fff !important;
+          &::before {
+            top: 58% !important;
+            background: #fff !important;
+          }
+        }
+        &-length {
+          font-size: 12px;
+          line-height: 160%;
+          opacity: 0.5;
+        }
+      }
+      &__attributes {
+        display: flex;
+        opacity: 0.5;
+      }
+      &__attribute {
+        flex: 0 0 auto;
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+
+        span {
+          font-size: 12px;
+          line-height: 160%;
+        }
+        i {
+          margin-right: 10px;
+          font-size: 10px;
+        }
+      }
+    }
+
+    &--service-page-hero {
+      &-contact {
+        margin-top: -150px;
+      }
+    }
+  }
+
+  .dd-sidebar {
+    &-container {
+      margin-top: 0;
+      margin-bottom: 50px !important;
+
+      &--sb {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .contact-tabs {
+    margin-top: 0;
+  }
+
+  .team-container {
+    margin-top: 50px;
+  }
+  .team-ceo {
+    width: 250px;
+  }
+  .contact-form {
+    &-wrap {
+      padding-left: 120px;
+      padding-right: 30px;
+      padding-bottom: 250px;
+
+      &--small {
+        margin-right: auto;
+        margin-left: unset;
+
+        .team-ceo {
+          right: unset;
+          left: -130px;
+          bottom: -50px;
+        }
+        .team-ceo__card {
+          right: unset;
+          left: -20px;
+        }
+      }
+
+      .dd-button {
+        width: 100%;
+      }
+    }
+  }
+  .vacancy-form {
+    .dd-button {
+      width: 100%;
+    }
+  }
+  .vacancy-ceo {
+    &-wrap {
+    }
+    width: 250px;
+    &__card {
+      bottom: 10px;
+      right: -30px;
+    }
+  }
+
+  .post-card {
+    &__route {
+      &-start,
+      &-finish {
+        font-size: 10px;
+      }
+      &-length {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .accomplishments {
+    &__value {
+      font-size: 65px;
+    }
+  }
+
+  .gallery-swiper {
+    margin-top: -50px;
+    padding-top: 80px;
+    .swiper-nav-container {
+      position: absolute;
+      top: 0;
+      height: 50px;
+      right: 150px;
+      width: 110px;
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: rgba(0, 0, 0, 0.3);
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-footer {
+    &__logo {
+      &-wrap {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .section {
+    &--home-hero {
+      background-size: cover;
+      background-position: top left;
+      height: 760px;
+      padding-bottom: 75px;
+      &__content {
+        font-size: 1rem;
+      }
+      &__floating-card {
+        bottom: 75px;
+        right: 10px;
+      }
+    }
+
+    &--page-hero {
+      background-size: cover;
+      background-position: top left;
+      margin-bottom: 0;
+
+      &__content {
+        font-size: 1rem;
+      }
+    }
+
+    &--sb-page-hero {
+      height: 600px;
+      background-size: cover;
+      background-position: top left;
+
+      &-content {
+        margin-top: -40px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      &__content {
+        font-size: 1rem;
+      }
+
+      &__route {
+        display: flex;
+        margin-bottom: 15px;
+        justify-content: space-between;
+        align-items: center;
+
+        &-start,
+        &-finish {
+          font-size: 16px;
+          line-height: 160%;
+        }
+        &-arrow {
+          margin-left: 10px;
+          margin-right: 10px;
+          color: #fff !important;
+          &::before {
+            top: 58% !important;
+            background: #fff !important;
+          }
+        }
+        &-length {
+          font-size: 12px;
+          line-height: 160%;
+          opacity: 0.5;
+        }
+      }
+      &__attributes {
+        display: flex;
+        opacity: 0.5;
+      }
+      &__attribute {
+        flex: 0 0 auto;
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+
+        span {
+          font-size: 12px;
+          line-height: 160%;
+        }
+        i {
+          margin-right: 10px;
+          font-size: 10px;
+        }
+      }
+    }
+
+    &--service-page-hero {
+      height: 1350px;
+      margin-top: -560px;
+
+      &-b {
+        margin-top: -730px;
+      }
+
+      background-size: cover;
+      background-position: top left;
+
+      &-content {
+        // position: relative;
+        // z-index: 1;
+        margin-top: 100px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      &__title {
+        font-weight: bold;
+        line-height: 120%;
+        margin-bottom: 30px;
+      }
+      &__content {
+        font-size: 1.5rem;
+        line-height: 160%;
+        margin-bottom: 45px;
+      }
+
+      &__route {
+        display: flex;
+        margin-bottom: 15px;
+        justify-content: space-between;
+        align-items: center;
+
+        &-start,
+        &-finish {
+          font-size: 16px;
+          line-height: 160%;
+        }
+        &-arrow {
+          margin-left: 10px;
+          margin-right: 10px;
+          color: #fff !important;
+          &::before {
+            top: 58% !important;
+            background: #fff !important;
+          }
+        }
+        &-length {
+          font-size: 12px;
+          line-height: 160%;
+          opacity: 0.5;
+        }
+      }
+      &__attributes {
+        display: flex;
+        opacity: 0.5;
+      }
+      &__attribute {
+        flex: 0 0 auto;
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+
+        span {
+          font-size: 12px;
+          line-height: 160%;
+        }
+        i {
+          margin-right: 10px;
+          font-size: 10px;
+        }
+      }
+    }
+
+    &--docs {
+      height: auto;
+      padding-top: 600px;
+      padding-bottom: 600px;
+      margin-top: -400px;
+      margin-bottom: -400px;
+
+      background-size: cover;
+      background-position: center center;
+
+      &-content {
+        position: relative;
+        z-index: 2;
+        &-row {
+          margin-bottom: 50px;
+        }
+      }
+
+      &__hand {
+        &-wrap {
+          display: none;
+          position: absolute;
+          right: 0;
+          bottom: -20px;
+        }
+      }
+    }
+
+    &--cases {
+      margin-top: -180px;
+      margin-bottom: 100px;
+    }
+
+    &--map {
+      position: relative;
+      z-index: 1;
+      margin-bottom: -80px;
+
+      &-title {
+        display: inline-block;
+        position: relative;
+        z-index: 11;
+      }
+      &-container {
+        position: relative;
+      }
+      &-content {
+        position: relative;
+        // z-index: 10;
+      }
+    }
+
+    &--robinson {
+      height: 950px;
+      // padding-top: 280px;
+      padding-top: 160px;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      & > .container {
+        position: relative;
+        z-index: 1;
+      }
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    &--certificates {
+      margin-top: -280px;
+      margin-bottom: 100px;
+      position: relative;
+    }
+  }
+
+  .floating-card {
+    right: unset;
+    left: 10px;
+    width: calc(100% - 20px);
+    bottom: -20px;
+  }
+
+  .text-ultra-parallax-img {
+    background-size: 100% 150%;
+  }
+  // .text-ultra-parallax {
+  //   margin-top: -40px;
+  //   font-size: 178.75px;
+  //   font-weight: 900;
+
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+
+  .text-title-big {
+    font-size: 56px;
+  }
+
+  .docs {
+    // &-container {
+    //   height: 335px;
+    // }
+    &-caption {
+      font-size: 12px;
+      line-height: 150%;
+    }
+    &__item {
+      &-1 {
+        top: 0;
+        left: 0;
+        width: 53.3%;
+      }
+      &-2 {
+        top: 50px;
+        left: 20%;
+        width: 53.3%;
+      }
+      &-3 {
+        top: 20px;
+        left: 50%;
+        width: 53.3%;
+      }
+
+      &.active {
+        &.docs__item-3 {
+          margin-left: 50px;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+
+  .contact-map {
+    &-container {
+      display: none;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0;
+      position: relative;
+      height: 210px;
+
+      &--timeline {
+        height: 350px;
+        margin-top: 0;
+        margin-bottom: 50px;
+        margin-left: 0;
+      }
+    }
+
+    &__timeline {
+      left: 0;
+      top: 0;
+    }
+
+    &__card {
+      &-wrap {
+        width: 175px;
+      }
+      padding: 10px;
+
+      &::after {
+        display: none;
+      }
+
+      &-title {
+        font-size: 0.75rem;
+        line-height: 120%;
+        margin-bottom: 5px;
+
+        span {
+          font-size: 0.65rem;
+          line-height: 120%;
+        }
+      }
+      &-content {
+        font-size: 0.65rem;
+        line-height: 120%;
+        margin-bottom: 8px;
+      }
+      &-phone,
+      &-email {
+        font-size: 0.65rem;
+        line-height: 120%;
+      }
+      &-ripple {
+        display: none;
+      }
+    }
+
+    &__russia {
+      &-wrap {
+        position: absolute;
+        // bottom: 0;
+        top: 0;
+        left: 0;
+        right: unset;
+        z-index: 1;
+
+        .contact-map__card-wrap {
+          top: 140px;
+          left: 65px;
+        }
+
+        &.active {
+          // z-index: 10;
+
+          .contact-map__map {
+            opacity: 1 !important;
+          }
+        }
+
+        // &:hover ~ .contact-map__kazakhstan-wrap {
+        //   transform: translate(25px, 25px);
+        // }
+        // &:hover ~ .contact-map__kyrgyzstan-wrap {
+        //   transform: translate(50px, 50px);
+        // }
+        // &:hover ~ .contact-map__tajikistan-wrap {
+        //   transform: translate(20px, 40px);
+        // }
+        // &:hover ~ .contact-map__uzbekistan-wrap {
+        //   transform: translate(30px, 70px);
+        // }
+      }
+    }
+
+    &__kazakhstan {
+      &-wrap {
+        position: absolute;
+        // bottom: -60px;
+        top: 360px;
+        left: 220px;
+        width: 450px;
+        z-index: 2;
+
+        .contact-map__card-wrap {
+          top: 70px;
+          left: 270px;
+        }
+
+        &.active {
+          width: 570px;
+          left: 70px;
+          bottom: -35px;
+          z-index: 10;
+
+          .contact-map__map {
+            opacity: 1 !important;
+          }
+        }
+
+        // &:hover {
+        //   transform: translate(5px, -35px);
+        // }
+        // &:hover ~ .contact-map__kyrgyzstan-wrap {
+        //   transform: translate(55px, 25px);
+        // }
+        // &:hover ~ .contact-map__tajikistan-wrap {
+        //   transform: translate(-10px, 20px);
+        // }
+        // &:hover ~ .contact-map__uzbekistan-wrap {
+        //   transform: translate(-20px, -10px);
+        // }
+      }
+    }
+
+    &__kyrgyzstan {
+      &-wrap {
+        position: absolute;
+        width: 275px;
+        // bottom: -55px;
+        top: 440px;
+        left: 435px;
+        z-index: 3;
+
+        .contact-map__card-wrap {
+          top: -120px;
+          left: 50px;
+        }
+
+        &.active {
+          width: 410px;
+          left: 325px;
+          z-index: 10;
+
+          .contact-map__map {
+            opacity: 1 !important;
+          }
+        }
+
+        // &:hover {
+        //   transform: translate(85px, 55px);
+        // }
+        // &:hover ~ .contact-map__tajikistan-wrap {
+        //   transform: translate(-40px, 30px);
+        // }
+        // &:hover ~ .contact-map__uzbekistan-wrap {
+        //   transform: translate(-30px, -20px);
+        // }
+      }
+    }
+
+    &__tajikistan {
+      &-wrap {
+        position: absolute;
+        width: 160px;
+        // bottom: -78px;
+        top: 515px;
+        left: 395px;
+        z-index: 4;
+
+        .contact-map__card-wrap {
+          top: -80px;
+          left: -55px;
+        }
+
+        &.active {
+          width: 315px;
+          left: 305px;
+          bottom: -125px;
+          z-index: 10;
+
+          .contact-map__map {
+            opacity: 1 !important;
+          }
+        }
+
+        // &:hover {
+        //   transform: translate(-50px, 35px);
+        // }
+        // &:hover ~ .contact-map__uzbekistan-wrap {
+        //   transform: translate(-30px, -30px);
+        // }
+      }
+    }
+
+    &__uzbekistan {
+      &-wrap {
+        position: absolute;
+        width: 208px;
+        // bottom: -95px;
+        top: 510px;
+        left: 215px;
+        z-index: 5;
+
+        &.active {
+          width: 300px;
+          left: 135px;
+          bottom: -49px;
+          z-index: 10;
+
+          .contact-map__map {
+            opacity: 1 !important;
+          }
+        }
+
+        .contact-map__card-wrap {
+          top: -85px;
+          left: 115px;
+        }
+
+        // &:hover {
+        //   transform: translate(-35px, 15px);
+        // }
+      }
+    }
+    // &__russia {
+    //   &-wrap {
+    //     position: absolute;
+    //     width: 100%;
+    //     bottom: 0;
+    //     right: 0;
+    //     z-index: 1;
+
+    //     .contact-map__card-wrap {
+    //       top: -50px;
+    //       left: 50%;
+    //       transform: translateX(-50%);
+    //     }
+
+    //     &:hover ~ .contact-map__kazakhstan-wrap {
+    //       transform: inherit;
+    //     }
+    //     &:hover ~ .contact-map__kyrgyzstan-wrap {
+    //       transform: inherit;
+    //     }
+    //     &:hover ~ .contact-map__tajikistan-wrap {
+    //       transform: inherit;
+    //     }
+    //     &:hover ~ .contact-map__uzbekistan-wrap {
+    //       transform: inherit;
+    //     }
+    //   }
+    // }
+
+    // &__kazakhstan {
+    //   &-wrap {
+    //     position: absolute;
+    //     bottom: -15%;
+    //     left: 23%;
+    //     width: 60%;
+    //     z-index: 2;
+
+    //     .contact-map__card-wrap {
+    //       top: -50px;
+    //       left: 50%;
+    //       transform: translateX(-50%);
+    //     }
+
+    //     &.active {
+    //       width: 80%;
+    //       left: 13%;
+    //       z-index: 10;
+
+    //       .contact-map__map {
+    //         opacity: 1 !important;
+    //       }
+    //     }
+
+    //     &:hover {
+    //       transform: inherit;
+    //     }
+    //     &:hover ~ .contact-map__kyrgyzstan-wrap {
+    //       transform: inherit;
+    //     }
+    //     &:hover ~ .contact-map__tajikistan-wrap {
+    //       transform: inherit;
+    //     }
+    //     &:hover ~ .contact-map__uzbekistan-wrap {
+    //       transform: inherit;
+    //     }
+    //   }
+    // }
+
+    // &__kyrgyzstan {
+    //   &-wrap {
+    //     position: absolute;
+    //     width: 40%;
+    //     left: 50%;
+    //     bottom: -20%;
+    //     z-index: 3;
+
+    //     .contact-map__card-wrap {
+    //       top: -80%;
+    //       left: 50%;
+    //       transform: translateX(-50%);
+    //     }
+
+    //     &.active {
+    //       width: 80%;
+    //       left: 20%;
+    //       bottom: -10%;
+
+    //       z-index: 10;
+
+    //       .contact-map__map {
+    //         opacity: 1 !important;
+    //       }
+    //     }
+
+    //     &:hover {
+    //       transform: inherit;
+    //     }
+    //     &:hover ~ .contact-map__tajikistan-wrap {
+    //       transform: inherit;
+    //     }
+    //     &:hover ~ .contact-map__uzbekistan-wrap {
+    //       transform: inherit;
+    //     }
+    //   }
+    // }
+
+    // &__tajikistan {
+    //   &-wrap {
+    //     position: absolute;
+    //     width: 26%;
+    //     left: 48%;
+    //     bottom: -28%;
+    //     z-index: 4;
+
+    //     .contact-map__card-wrap {
+    //       top: -50%;
+    //       left: 50%;
+    //       transform: translateX(-50%);
+    //     }
+
+    //     &.active {
+    //       width: 60%;
+    //       left: 20%;
+    //       bottom: -20%;
+    //       z-index: 10;
+
+    //       .contact-map__map {
+    //         opacity: 1 !important;
+    //       }
+    //     }
+
+    //     &:hover {
+    //       transform: inherit;
+    //     }
+    //     &:hover ~ .contact-map__uzbekistan-wrap {
+    //       transform: inherit;
+    //     }
+    //   }
+    // }
+
+    // &__uzbekistan {
+    //   &-wrap {
+    //     position: absolute;
+    //     width: 30%;
+    //     bottom: -25%;
+    //     left: 25%;
+    //     z-index: 5;
+
+    //     &.active {
+    //       width: 60%;
+    //       left: 20%;
+    //       bottom: -30%;
+    //       z-index: 10;
+
+    //       .contact-map__map {
+    //         opacity: 1 !important;
+    //       }
+    //     }
+
+    //     .contact-map__card-wrap {
+    //       top: -80%;
+    //       left: 50%;
+    //       transform: translateX(-50%);
+    //     }
+
+    //     &:hover {
+    //       transform: inherit;
+    //     }
+    //   }
+    // }
+  }
+
+  .team-text {
+    position: relative;
+    z-index: 12;
+  }
+  .team-container {
+    position: relative;
+    margin-top: 0;
+  }
+  .team-ceo {
+    &-wrap {
+    }
+    bottom: 0;
+    left: unset;
+    right: 0;
+    width: 150px;
+    transform: scale(-1, 1);
+    z-index: 18;
+
+    &__image {
+      display: none;
+    }
+    &__image-mobile {
+      display: block;
+      transform: scale(-1, 1);
+    }
+
+    &__card {
+      bottom: 20px;
+      left: 20px;
+      max-width: calc(100% - 40px);
+      width: 100%;
+      z-index: 17;
+      background: #f4f4f4;
+      box-shadow: none;
+
+      padding: 15px;
+
+      &-quote {
+        width: 60%;
+      }
+    }
+  }
+
+  .team-crew {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    display: none;
+
+    &__member {
+      flex: 1 1 auto;
+
+      &:nth-child(1) {
+        width: 50%;
+        margin-bottom: 20px;
+        z-index: 17;
+      }
+      &:nth-child(2) {
+        width: 50%;
+        margin-bottom: 20px;
+        margin-left: 0;
+        z-index: 18;
+      }
+      &:nth-child(3) {
+        width: 33.3%;
+        margin-bottom: 20px;
+        margin-left: 0;
+      }
+      &:nth-child(4) {
+        width: 33.3%;
+        margin-bottom: 20px;
+        margin-left: 0;
+        z-index: 2;
+      }
+      &:nth-child(5) {
+        width: 33.3%;
+        margin-bottom: 20px;
+        margin-left: 0;
+        z-index: 3;
+      }
+      &:nth-child(6) {
+        display: none;
+      }
+
+      &-image {
+        width: 100%;
+        &-wrap {
+          position: relative;
+          margin-bottom: 60px;
+        }
+        &-alt {
+          display: none;
+        }
+      }
+
+      &-card {
+        top: unset;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 190px;
+        width: 90%;
+        padding: 5px 10px;
+
+        opacity: 1;
+        pointer-events: none;
+
+        &-name {
+          font-weight: bold;
+          font-size: 1rem;
+          line-height: 160%;
+        }
+        &-position {
+          font-size: 0.75rem;
+          line-height: 160%;
+          color: rgba(0, 0, 0, 0.5);
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .team-crew-mobile {
+    display: block;
+  }
+
+  .contact-form {
+    &-wrap {
+      padding-top: 40px;
+      padding-bottom: 250px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      margin-top: 20px;
+      margin-bottom: 50px;
+
+      &--small {
+        .team-ceo {
+          bottom: 0;
+          left: unset;
+          right: 0;
+          width: 150px;
+          transform: scale(-1, 1);
+        }
+        .team-ceo__image {
+          width: 125px;
+          // display: block;
+        }
+        .team-ceo__card {
+          bottom: 20px;
+          left: 20px;
+          max-width: calc(100% - 40px);
+          width: 100%;
+          z-index: 17;
+          background: #f4f4f4;
+          box-shadow: none;
+
+          padding: 15px;
+
+          &-quote {
+            width: 60%;
+          }
+        }
+      }
+    }
+
+    &__row {
+      flex-direction: column;
+    }
+    &__col {
+      &-left {
+        width: 100%;
+      }
+      &-right {
+        width: 100%;
+      }
+    }
+  }
+
+  .animated-graphs {
+    &-wrap {
+      margin-left: 0;
+    }
+  }
+
+  .posts-swiper {
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: none;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      padding: 24px;
+
+      &::after {
+        font-size: 12px;
+      }
+    }
+
+    .swiper-button-prev {
+      margin-left: 0;
+    }
+    .swiper-slide:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .gallery-swiper {
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .swiper-slide:first-child {
+      margin-left: 0;
+    }
+    .swiper-slide:last-child {
+      margin-right: 0;
+    }
+
+    &--small {
+      margin-right: 0;
+    }
+
+    margin-top: -40px;
+    .swiper-nav-container {
+      position: absolute;
+      top: 0;
+      height: 50px;
+      right: 0;
+      width: 110px;
+    }
+  }
+
+  .dd-sidebar {
+    &-container {
+      margin-top: 40px;
+
+      &--sb {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .team-card {
+    padding: 0 10px;
+    margin-bottom: 40px;
+    &__image {
+      &-wrap {
+        &--4 {
+          margin-left: 0;
+        }
+        &--5 {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .ceo-form {
+    &__row {
+      flex-wrap: wrap;
+    }
+    &__col {
+      width: 100%;
+    }
+    padding-bottom: 185px;
+  }
+
+  .ceo-message {
+    &__image {
+      &-wrap {
+        position: absolute;
+        top: unset;
+        bottom: 0;
+        right: 20px;
+        width: 150px;
+        z-index: 2;
+
+        transform: scale(-1, 1);
+      }
+    }
+
+    &__card {
+      position: absolute;
+      top: unset;
+      bottom: 20px;
+      right: 20px;
+      max-width: calc(100% - 40px);
+      z-index: 1;
+      padding: 15px;
+
+      background: #f4f4f4;
+      box-shadow: none;
+
+      &-quote {
+        width: 60%;
+      }
+    }
+  }
+
+  .vacancy-form {
+    &-wrap {
+      padding: 40px 15px;
+      padding-bottom: 250px;
+    }
+
+    &__row {
+      flex-wrap: wrap;
+      margin-bottom: 0;
+    }
+    &__col {
+      padding: 0 10px;
+      width: 100%;
+      margin-bottom: 20px;
+      &--text-area {
+        width: 100%;
+      }
+
+      &--submit {
+        width: 100%;
+      }
+    }
+  }
+
+  .vacancy-ceo {
+    &-wrap {
+    }
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    z-index: 2;
+
+    transform: scale(-1, 1);
+
+    &__image {
+      display: none;
+    }
+    &__image-mobile {
+      display: block;
+      transform: scale(-1, 1);
+    }
+
+    &__card {
+      bottom: 20px;
+      right: 20px;
+      max-width: calc(100% - 40px);
+      z-index: 1;
+      padding: 15px;
+
+      padding: 15px;
+      background: #f4f4f4;
+      box-shadow: none;
+
+      &-quote {
+        width: 60%;
+      }
+    }
+  }
+
+  .courier-form {
+    &-wrap {
+      position: relative;
+      z-index: 15;
+
+      width: 100%;
+      max-width: 895px;
+      margin-left: auto;
+
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      background: #fff;
+      box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+    }
+
+    &__row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__col {
+      width: 100%;
+      margin-bottom: 20px;
+      &-hint {
+        font-size: 0.75rem;
+        opacity: 0.5;
+      }
+    }
+    &__submit {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    &__weight {
+      max-width: none;
+      width: 100%;
+    }
+
+    small {
+      font-size: 12px;
+      line-height: 160%;
+      color: #000000;
+      opacity: 0.4;
+      max-width: 285px;
+    }
+  }
+
+  .cut-section {
+    margin-bottom: 0;
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  .overlay-cdk {
+    &__content-vacancy {
+      &-wrap {
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 80vh;
+        height: 100%;
+      }
+    }
+    &__content-contact {
+      &-wrap {
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 80vh;
+        height: 100%;
+      }
+
+      &-team {
+        &-bubble {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .accomplishments {
+    &__title {
+      font-size: 14px;
+      line-height: 120%;
+    }
+    &__value {
+      font-size: 42px;
+      line-height: 140%;
+    }
+    &__content {
+      font-size: 14px;
+      line-height: 120%;
+    }
+  }
+
+  .contact-info {
+    &-container {
+      flex: 0 0 100%;
+    }
+
+    &__phone,
+    &__email {
+      width: 100%;
+    }
+    &__address {
+      width: 100%;
+    }
+  }
+
+  .post-card {
+    &__route {
+      &-start,
+      &-finish {
+        font-size: 16px;
+      }
+      &-length {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .m-mobile-0 {
+    margin: 0 !important;
+  }
+  .p-mobile-0 {
+    padding: 0 !important;
+  }
+
+  .dd-button {
+    font-size: 0.85rem;
+  }
+
+  .main-header {
+    .navbar-brand {
+      width: 150px;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .docs {
+    &-container {
+      height: 420px;
+    }
+  }
+}
+@media (max-width: 430px) {
+  .docs {
+    &-container {
+      height: 375px;
+    }
+
+    &__item {
+      &.active {
+        &.docs__item-1 {
+          width: 200px;
+        }
+
+        &.docs__item-2 {
+          width: 200px;
+        }
+
+        &.docs__item-3 {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 410px) {
+  .section {
+    &--robinson {
+      height: 1110px;
+      // padding-top: 280px;
+      padding-top: 160px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .docs {
+    &-container {
+      height: 320px;
+    }
+  }
+  .team-crew-mobile {
+    &__member {
+      &-card {
+        &-name {
+          font-size: 12px;
+        }
+        &-position {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 360px) {
+  .contact-map {
+    &-container {
+      &--timeline {
+        height: 350px;
+        margin-top: -70px;
+        margin-bottom: 50px;
+        margin-left: 0;
+      }
+    }
+
+    &__timeline {
+      top: 90px;
+      left: 0;
+    }
+  }
+
+  .contact-form {
+    &-wrap {
+      padding-bottom: 300px;
+    }
+  }
+  .vacancy-form {
+    &-wrap {
+      padding-bottom: 300px;
+    }
+  }
+}

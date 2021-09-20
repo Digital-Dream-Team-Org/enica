@@ -1,0 +1,19 @@
+
+.icon-left-dir:before { content: '\e800'; } /* '' */
+.icon-up-dir:before { content: '\e801'; } /* '' */
+.icon-arrow:before { content: '\e802'; } /* '' */
+.icon-boat:before { content: '\e803'; } /* '' */
+.icon-down-dir:before { content: '\e804'; } /* '' */
+.icon-up-open:before { content: '\e805'; } /* '' */
+.icon-left-open:before { content: '\e806'; } /* '' */
+.icon-truck:before { content: '\e807'; } /* '' */
+.icon-train:before { content: '\e808'; } /* '' */
+.icon-plane:before { content: '\e809'; } /* '' */
+.icon-right-open:before { content: '\e80a'; } /* '' */
+.icon-down-open:before { content: '\e80b'; } /* '' */
+.icon-clip:before { content: '\e80c'; } /* '' */
+.icon-cargo:before { content: '\e80d'; } /* '' */
+.icon-right-dir:before { content: '\e80e'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
+.icon-vkontakte:before { content: '\f189'; } /* '' */
